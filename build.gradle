@@ -1,0 +1,32 @@
+
+
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'maven'
+    apply plugin: 'maven-publish'
+    version = '1'
+}
+
+
+
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+		def console = System.console()
+		def repoLoc = console.readLine('> maven-repo path: ')
+		def repoVersion = console.readLine('> maven-repo path: ')
+
+		pom.artifactId= "sample-jar"
+		pom.version = repoVersion
+		pom.groupId= "com.example"
+		
+
+		repository(url: "file://"+repoLoc+"/maven-repo/")
+
+
+        }
+    }
+}
+
+
