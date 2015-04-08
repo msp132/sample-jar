@@ -8,11 +8,4 @@ deploy:
     repo: msp132/sample-jar
     all_branches: true
     tags: true
-after_script:
-  -mkdir temp
-  -cd temp
-  -git clone git://github.com/msp132/maven-repo.git
-  -cp ../build/libs/* .
-  -git add *
-  -git commit -m -a "new version"
-  -git push
+
