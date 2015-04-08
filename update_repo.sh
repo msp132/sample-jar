@@ -1,4 +1,6 @@
 #!/bin/bash
+ls -al
+pwd
 mkdir temp
 cd temp
 git clone https://github.com/msp132/maven-repo.git
