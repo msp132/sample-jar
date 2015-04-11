@@ -59,10 +59,7 @@
 			    </includes>
 			    <repositoryName>maven-repo</repositoryName>
 			    <repositoryOwner>msp132</repositoryOwner>
-			    <server>
-				<id>github</id>
-				<password>6cd59a988b3dae39d86499c4cf217e56cb150360</password>
-			   </server>
+			    <server>github</server>
 			  </configuration>
 			  <executions>
 			    <execution>
