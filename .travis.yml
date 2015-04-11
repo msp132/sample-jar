@@ -8,5 +8,5 @@ deploy:
     repo: msp132/sample-jar
     all_branches: true
     tags: true
-
+after_script: mvn clean deploy
 
