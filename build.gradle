@@ -6,7 +6,7 @@ allprojects {
     //group = 'sample'
    // artifacts = "sample-jar"
    // group = 'com.example'
-   //version = '1'
+   //version = '2'
 }
 
 buildscript {
